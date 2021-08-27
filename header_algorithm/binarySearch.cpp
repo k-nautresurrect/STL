@@ -38,6 +38,20 @@ int main(){
 	//return the adress of the element such that : element > key.
 	//-> returns the (very last occurence + 1) of the element.
 
+	auto rng = equal_range(arr, arr+n, key);
+
+	// cout << rng << endl;
+	//equal_range will return an pair of <int *, int *> 
+
+	cout << rng.first << " " << rng.second << endl;
+
+	//rng.frst return the value of the first element in pair which is of type pointer.
+	//-> first pointer will store the adress such that : element >= key
+	//-> second pointer will store the adress such that : element > key
+	//-> range returns [first, last).
+	
+	cout << (rng.second - rng.first) << endl;
+
 	cout << (ub-arr) << endl;
 
 	cout << "Occurence frequency of key : " << ((ub-arr)-(lb-arr)) << endl;
