@@ -17,8 +17,7 @@ int main(){
 	//-> predicates are function that return boolean values.
 	//-> it takes a single parameter to decide the boolean value.
 
-	//the syntax is : 
-	// bool operator()
+	
 
 	cout << all << endl;
 }
